@@ -1,0 +1,16 @@
+circle{
+ /* stroke-dasharray: 502; */
+ /* stroke-dashoffset: 165; */
+ stroke-width: 12px;
+ stroke: rgb(255, 119, 1);
+ fill: none;
+ /* animation: anim 2s linear forwards; */
+}
+@keyframes anim{
+    0%{
+        stroke-dashoffset: 472;
+    }
+  100%{
+    stroke-dashoffset: 165;
+  }
+}

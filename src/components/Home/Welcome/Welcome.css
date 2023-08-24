@@ -1,0 +1,206 @@
+/* body{
+  
+} */
+.welcome-container{
+    background-image: url("https://okab.pixeldima.com/wp-content/uploads/2016/06/Scene-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;  
+    min-height: fit-content;  
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    overflow: hidden;
+
+}
+.welcome-parent{
+    /* margin-top: 390px; */
+    padding-top: 63px;
+    margin: 220px;
+    align-items: center;
+    
+
+}
+.welcome-details-name{
+
+    font-family:"Poppins Bold" ;
+    font-size: 55px;
+    font-weight:bold;
+    color: rgb(55, 55, 55);
+    position: relative;
+    width: 80rem;
+}
+
+/* .welcome-details-name .loaded{
+    transform: translate(100px);
+    transition: 3s;
+    margin-left: 200px;
+    animation: "bounceInLeft";
+    animation-duration: 3s;
+    
+} */
+.normal-text{
+    animation: bounceInLeft 2s ease 0s;
+    width: 300px;
+    position: relative;
+
+}
+@keyframes bounceInLeft{
+    0%{
+        left: -150px;
+    }
+    100%{
+        left: 0;
+    }
+}
+.highlighted-text{
+    color: #ec4d21;
+    animation: bounceInRight 2s ease 0s;
+    position: relative;
+}
+@keyframes bounceInRight{
+    0%{
+        left: 150px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+.welcome-details-tagline{
+    font-family:sans-serif ;
+    font-size: 20px;
+}
+.tagline-line{
+    /* animation: textAnimation 2s ease 0s ; */
+    position: relative;
+    padding: 3px;
+}
+.tagline-line-words{
+    /* letter-spacing: 1px; */
+    padding: 0 2px ;
+    /* color:#abb8c3; */
+    color: rgb(128, 128, 128);
+}
+.tagline-line span {
+    display: inline-block;
+    animation: textAnimation 0.5s ease both;
+    animation-delay: calc(0.1s * var(--index)); /* Optional: Add delay based on index */
+  }
+@keyframes textAnimation{
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+}
+
+
+.btn-primary{
+    display: inline-block;
+    margin-top: 40px;
+    padding-right: 0.5%;
+
+}
+ .btn-primary-view{
+    animation: bounceInUp 3s ease 0s;
+    height: 50px;
+    width: 170px;
+    background-color: rgba(0, 0, 0,0);
+    cursor: pointer;
+    border: 2px solid black;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(51, 51,51);
+    position: relative;
+
+}
+.btn-primary-view:hover{
+    background-color:rgb(51, 51, 51);
+    color: white;
+}
+.btn-primary-buy{
+    /* animation : name time-duration timing-function delay itration-count direction fill-mode play-state*/
+    animation: bounceInUp 3s ease 0s 1 normal;
+    height: 50px;
+    width: 170px;
+    background-color: #ec4d21;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+
+}
+.btn-primary-buy:hover{
+    background-color:#ef4414 ;
+}
+@keyframes bounceInUp{
+    0%{
+        top: 100px;
+        opacity: 0;
+    }
+    50%{
+         opacity: 1;
+    }
+    100%{
+        top: 0px;
+    }
+}
+/* i pad */
+/* @media only screen and (max-width: 600px){
+    .welcome-container{
+        background-size: cover;
+        height: 890px;
+        
+        width: 100%;
+        overflow: visible;
+        min-height: fit-content;
+    }
+  
+
+    .welcome-parent{
+        margin-left: 1px;
+        padding-top: 3em;
+        padding-left: 15em;
+        
+    }
+    
+
+     .welcome-details-name{
+        font-size: 1.2em;
+        width: 50rem;
+    }
+
+    .welcome-details-tagline{
+        font-size: 8px;
+    }
+    .btn-primary{
+        position: relative;
+    
+        display: block;
+    }
+
+    .btn-primary-view{
+        height: 45px;
+        width: 15%;
+        border: 1px solid black;
+        font-size: 14px;
+    
+    
+    }
+    .btn-primary-buy{
+        height: 45px;
+        width: 15%;
+        border: 0.3px  black;
+        font-size: 14px;
+        
+    
+    }
+} */

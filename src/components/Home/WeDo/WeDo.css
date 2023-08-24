@@ -1,0 +1,168 @@
+.container{
+/* height: 100%; */
+/* min-height: fit-content; */
+min-height: 60px;
+width: 100%;
+display: flex;
+background-color: #f6f2f2;
+
+}
+.container-wedo{
+    animation: doBounce 2s ease 0s;
+    /* height: 50%; */
+    width: 60%;
+    position: relative;
+    left: 5%;
+    /* margin-right: 8%; */
+    padding-right: 6%;
+    margin-top: 5%;
+    
+}
+@keyframes doBounce{
+    0%{
+        left: -5%;
+    }
+    100%{
+        left: 5%;
+    }
+}
+
+.heading-text{
+    font-size: 3.5vh;
+    font-weight: bold;
+    color: #5c5c5c;
+    font-family:"Poppins Bold" ;
+    text-align: left;
+    padding-left:10% ;
+
+}
+.reguler-text{
+    box-sizing:initial;
+    width: 80%;
+    padding-left:10% ;
+
+}
+.reguler-text p{
+    color: #888686;
+    font-size: 1.8vh;
+    text-align: left;
+    word-spacing: 2px;
+    
+}
+.btns{
+  
+  /* display: inline-block; */
+   height:45px ;
+   text-align: left;
+   padding-left:10% ;
+   margin-top: 2%
+
+ 
+
+
+}
+.btn-read{
+  height: 100%;
+  width: 25%;
+  background-color: rgba(0, 0, 0, 0);
+  font-size:2.2vh ;
+  color: #585858;
+  border: 1px solid;
+
+  
+}
+.btn-read:hover{
+   background-color: #5c5c5c; 
+   color: white;
+
+}
+/* @keyframes buttonAnimation{
+    0%{
+        
+    }
+    100%{
+        background-color:#5c5c5c ;
+    }
+} */
+.container-img{
+    /* height: 100%; */
+    /* width: 30%; */
+    margin-top: 5% ;
+    padding-top: 5px;
+    padding-right: 1%;
+    /* background-color: red; */
+}
+.picture{
+    height:95%;
+    position: relative;
+    animation: imgBounce 2s ease 0s;
+    /* height:100%; */
+    width: 76%;
+}
+@keyframes imgBounce{
+  
+    0%{
+        right: -25%;
+    }
+    100%{
+        right: 0%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .container{
+        display: block;
+        position: relative;
+        height: 60vh;  
+        width: 100vw;
+        overflow: hidden;
+      
+    } 
+    .container-wedo{
+        /* overflow: hidden; */
+        height: 35%;
+        width: 100%;
+    }
+    .heading-text{
+        font-size: 3.5vh;
+        /* padding-left:0 ; */
+        position: relative;
+        padding-left: 0;
+        font-size: 2vh;
+    }
+    .reguler-text{
+        padding-left:0 ;
+    
+    }
+    .reguler-text p{
+        font-size: 1vh;
+        
+    }
+    .btns{
+  
+        padding-left: 0;
+         text-align: left;
+    }      
+    .btn-read{
+        height: 90%;
+        width: 20%;
+        font-size:1.3vh ;
+        border: 1px solid;
+        font-weight: bold;
+      
+        
+      }
+      .container-img{
+       /* background-color: red; */
+       /* padding-bottom: 80%;
+       position:relative; */
+    }
+    .picture{
+     margin-top: -8%;
+     overflow: visible;
+     height: 80%;
+     width: 65%;
+     margin-left: 10%;
+     margin-top: -10%;
+   
+    }
+}
